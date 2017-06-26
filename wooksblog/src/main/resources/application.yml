@@ -1,0 +1,32 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  social:
+    facebook:
+      app-id: 1206569872805513
+      app-secret: 80216f5c4f87d7c0b7538a9cd1931e0f
+    twitter:
+      app-id: G2C1JkygWq6Xf0vzCLb9idhV
+      app-secret: npCaUXLGRtT08IQ5RPn0fajM3ivZQ1sqaYkISxD5ptoa0RMb0O
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 12dnrtm
+    driver-class-name: com.mysql.jdbc.Driver  
+  
+
+    
+logging:
+  level:
+    com.wooks.blog : DEBUG
+server:
+  error:
+    whitelabel:
+      enabled: false
